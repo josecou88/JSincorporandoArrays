@@ -4,12 +4,322 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cs/styles.css">
     <title>Document</title>
 </head>
-<body>
-    <h2> JavaScript: Incorporando Arrays!!</h2>
-    <h3>Coder</h3>
 
+<body>
+     
+    <nav class="navbar navbar-expand-lg navbar navbar-dark   container-fluid ">
+        
+        <div class="container-fluid">
+        <a class="navbar-brand "  href= "index.html">
+            <img class="logoBaru" src="./img/LogobaruB-removebg-preview.png" alt="logo de baru" />
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./paginas/quienSomos.html">Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/carta.html">Carta</a>
+              </li><li class="nav-item">
+                <a class="nav-link active" href="./paginas/carrito.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./paginas/formulario.html">Formulario</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cómo encontrarnos?
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Belgrano 433, Córdoba Argentina</a></li>
+                  <li><a class="dropdown-item" href="#">Rappi</a></li>
+                  <li><a class="dropdown-item" href="#">Pedidos Ya</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Whpp: 3513539219</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h2>
+                Bienvenidos a "Baru Fast Good" 
+            </h2>
+            <h3>
+                Elegi tus productos
+            </h3>
+        </div>
+        <div class=" bg-black opacity-75 text-light ">
+            <h4 class="tituloPag container-fluid animate__animated animate__bounceInLeft ">Carta isleña</h3>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 mt-3 mb-2 ms-4 d-flex justify-content-center">
+              <div class="col h-100 tarjetasC">
+                <div class="card w-75">
+                  <img  src="./img/paltapollo.jpeg" class="card-img-top paltaPollo" alt="wrap palta pollo">
+                  <div class="card-body bg-dark">
+                    <h5 class="card-title text-light">Wrap Palta pollo $650</h5>
+                    <p class="card-text text-light">Pollo, palta, lechuga, cebolla morada, tomate, queso crema y verdeo </p>
+                  </div>
+                </div>
+                <div>
+                  <form action="cantidad">
+                      <select name="cantidad" id="cantidad">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                      </select>
+                  </form>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                   Seleccionar
+                  </label>
+                </div>  
+              </div>
+              <div class="col tarjetasC">
+                <div class="card w-75">
+                  <img src="./img/wrapcañada.jpeg" class="card-img-top  paltaPollo argento " alt="wrap argento">
+                  <div class="card-body bg-dark">
+                    <h5 class="card-title text-light">Wrap Americano $650</h5>
+                    <p class="card-text text-light">Pollo, cebolla, pimiento, bacon crocante, lechuga y barbacoa.</p>
+                  </div>
+                </div>
+                <div>
+                  <form action="cantidad">
+                      <select name="cantidad" id="cantidad">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                      </select>
+                  </form>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                   Seleccionar
+                  </label>
+                </div>
+              </div>
+              <div class="col tarjetasC">
+                <div class="card w-75">
+                  <img src="./img/wrapBaru.jpeg" class="card-img-top  paltaPollo " alt="wrap argento">
+                  <div class="card-body bg-dark">
+                    <h5 class="card-title text-light">Wrap Baru $650</h5>
+                    <p class="card-text text-light">Pollo, tomate, cebolla morada, lechuga, palta, zanahoria y mayonesa.</p>
+                  </div>
+                </div>
+                <div>
+                  <form action="cantidad">
+                      <select name="cantidad" id="cantidad">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                      </select>
+                  </form>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                   Seleccionar
+                  </label>
+                </div>
+              </div>
+              <div class="col tarjetasC tarjetaEnsa">
+                <div class="card w-75">
+                  <img src="./img/ensalada5.jpeg" class="ensaProte  paltaPollo card-img-top" alt="ensalada mediterranea">
+                  <div class="card-body bg-dark">
+                      <h5 class="card-title text-light">Ensalada mediterranea $550</h5>
+                      <p class="card-text text-light">Jamón crudo, mix de verdes, queso tybo en cubos, champiñones y nueces.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <form action="cantidad">
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </form>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                     Seleccionar
+                    </label>
+                  </div>
+              </div>
+                <div class="col tarjetasC">
+                  <div class="card w-75">
+                    <img src="./img/ensaMedite.jpg" class=" paltaPollo card-img-top" alt="ensalada mediterranea">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title text-light">Ensalada prote $550</h5>
+                        <p class="card-text text-light">Jamón crudo, mix de verdes, queso tybo en cubos, champiñones y nueces.</p>
+                      </div>
+                  </div>
+                  <div>
+                      <form action="cantidad">
+                          <select name="cantidad" id="cantidad">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                       Seleccionar
+                      </label>
+                    </div>
+                </div>
+                <div class="col tarjetasC">
+                  <div class="card w-75">
+                    <img src="./img/cesarlejos.jpeg" class="ensaCesar  paltaPollo card-img-top" alt="ensalada cesar">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title text-light">Ensalada cesar $550</h5>
+                        <p class="card-text text-light">Pollo,lechuga manteca, queso sardo, crutones al oliva y el mejor aderezo cesar que vas a comer</p>
+                      </div>
+                  </div>
+                  <div>
+                      <form action="cantidad">
+                          <select name="cantidad" id="cantidad">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                       Seleccionar
+                      </label>
+                    </div>
+                </div>
+                <div class="col tarjetasC">
+                  <div class="card w-75">
+                    <img src="./img/tartazapallito.jpeg" class="tartaCal  paltaPollo card-img-top" alt="tarta de zapallito">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title text-light">Tarta de zapallito $500</h5>
+                        <p class="card-text text-light">Exquisita preparación de masa quebrada, zapallitos salteados y semillas de girasol.</p>
+                      </div>
+                  </div>
+                  <div>
+                      <form action="cantidad">
+                          <select name="cantidad" id="cantidad">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                       Seleccionar
+                      </label>
+                    </div>
+                </div>
+                <div class="col tarjetasC">
+                  <div class="card w-75">
+                    <img src="./img/tartacalabaza.jpeg" class="tartaCal  paltaPollo card-img-top" alt="tarta de calabaza">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title text-light">Tarta de jamon y queso $500</h5>
+                        <p class="card-text text-light">Exquisita preparación con masa quebrada, jamon, queso, y tomate</p>
+                      </div>
+                  </div>
+                  <div>
+                      <form action="cantidad">
+                          <select name="cantidad" id="cantidad">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                       Seleccionar
+                      </label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary m-3 "><a class="text-light " href="../paginas/carrito.html">Realizar pedido</a> <img src="./img/shopping cart variant_16.png" alt=""> </button>
+            </div>
+            <footer >
+                <ul class="nav justify-content-center align-items-center bg-dark futerClass">
+                  <li class="nav-item">
+                    <a class="nav-link active palabrasFoot"  aria-current="page" href="../index.html"><img class="loguito" src="./img/barulogoVerde-removebg-preview.png" alt="logo inicio baru"></a>
+                  </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link " href="https://www.instagram.com/barufastgood/" target="_blank"><img class= "logoinstagram" src="./img/instagram.png" alt="instagram"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/BaruFastGood/" target="_blank"><img class= "logoinstagram" src="./img/facebook.png" alt="facebook"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link palabrasFoot" href="./paginas/formulario.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  href=" https://wa.me/+5493516367609/"> <number>Whpp: 3513539219</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Belgrano 433, Cordoba</a>
+                  </li>
+                </ul>
+              </footer>
+
+
+
+    </main>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./JS/app.js"></script>
 </body>
 </html>
